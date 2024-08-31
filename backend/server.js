@@ -13,7 +13,7 @@ const app = express();
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: false }));
 
-// app.use('/api/goals', require('./routes/goalRoutes'));
+app.use('/api/goals', require('./routes/goalRoutes'));
 // app.use('/api/users', require('./routes/userRoutes'));
 
 // // Serve frontend
@@ -32,9 +32,9 @@ const app = express();
 // app.use(errorHandler);
 
 
-app.get('/api/goals', (req, res) => {
-  res.status(200).json({massage: 'Get goals'});
-})
+// app.get('/api/goals', (req, res) => {
+//   res.status(200).json({massage: 'Get goals'});
+// })
 
 app.listen(port, () => 
 console.log(`Server running on port http://localhost:${port}`)
