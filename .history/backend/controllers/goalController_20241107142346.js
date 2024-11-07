@@ -11,7 +11,7 @@ const getGoals = asyncHandler(async (req, res) => {
 
   res.status(200).json(goals)
 })
-
+s
 // @desc    Set goal
 // @route   POST /api/goals
 // @access  Private
@@ -86,9 +86,6 @@ const deleteGoal = asyncHandler(async (req, res) => {
 
   res.status(200).json({ id: req.params.id })
 })
-
-
-
 
 
 

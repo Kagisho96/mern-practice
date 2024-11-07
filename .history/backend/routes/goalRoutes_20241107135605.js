@@ -7,8 +7,6 @@ router.route('/').get(getGoals).post(setGoal)
 
 router.route('/:id').put(updateGoal).delete(deleteGoal)
 
-
-
-
+s
 
 module.exports = router
