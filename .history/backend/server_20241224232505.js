@@ -3,10 +3,9 @@ const express = require('express');
 const colors = require('colors');
 const dotenv = require('dotenv').config();
 const { errorHandler } = require('./middleware/errorMiddleware');
-// const connectDB = require('./config/db');
 const port = process.env.PORT || 8080;
 
-// connectDB();
+connectDB();
 
 const app = express();
 
@@ -15,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/goals', require('./routes/goalRoutes'));
 // app.use('/api/users', require('./routes/userRoutes'));
-g
+
 // // Serve frontend
 // if (process.env.NODE_ENV === 'production') {
 //   app.use(express.static(path.join(__dirname, '../frontend/build')));
